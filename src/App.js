@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'antd/dist/antd.css';
 import './App.css';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 
@@ -24,7 +24,7 @@ class App extends React.Component {
       <div className="App">
         <Layout style={{ minHeight: '100vh' }}>
           <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
-            <div className="logo" />
+            <div className="logo"/>
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
               <Menu.Item key="1">
                 <Icon type="pie-chart" />
